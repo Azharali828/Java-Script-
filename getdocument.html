@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="handleOnButtonclick()">on
+
+    </button>
+    <p id="paraid"></p>
+    <img id="imgid" src="./bulb off jpg.jpg" alt="">
+    <button onclick="handleoffButtonclick()">off
+
+    </button>
+    <script>
+        function handleoffButtonclick() {
+            document.getElementById("imgid").src = "./bulb off jpg.jpg";
+            document.getElementById("paraid").innerHTML = "The bulb is on Now"
+        }
+         function handleoffButtonclick() {
+            document.getElementById("imgid").src = "./bulb on jpg.jpg";
+            document.getElementById("paraid").innerHTML = "The bulb is on Now"
+        }
+    
+    </script>
+e 
+</body>
+
+</html>
