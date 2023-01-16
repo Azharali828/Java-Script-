@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic Operators</title>
+</head>
+<body>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nobis.
+
+   </p>
+   <script>
+    var a = 100;
+    var b = 10;
+    console.log("The Value of a + b is", a+b);
+    console.log("The Value of a - b is", a-b);
+    console.log("The Value of a * b is", a*b);
+    console.log("The Value of a / b is", a/b);
+    console.log("The Value of a + b is", a+b);
+    
+    // assignment Operators
+    var c = b;
+    
+    console.log(c);
+    c-= 2; //c = c - 2
+    console.log(c);
+    c+= 2; //c = c + 2
+    c*= 2; //c = c * 2
+    console.log(c);
+
+// Comparison Operator
+var x = 34;
+var y = 38;
+console.log(x==y);
+console.log(x>=y);
+console.log(x<=y);
+
+// logical Operators
+console.log( true && true)
+console.log( true && false)
+console.log( false && true)
+console.log( false && false)
+
+console.log( true || true)
+console.log( true || false)
+console.log( false || true)
+console.log( false || false)
+
+// logical not
+console.log(!false)
+console.log(!true)
+
+// Average
+function avg(a, b){
+c = (a + b)/2;
+return c;}
+c1 = avg (4,6);
+c2 = avg (14,16);
+console.log(c1, c2);
+// conditional in javascript
+var age = 11; //else or if useses
+if(age>18){
+    console.log('you can drink rasna water')
+}
+else{console.log('you can not drink rsna water')}
+
+age = "25"
+if (age > 32){
+    console.log("you are not kid")
+}
+else if(age > 26){
+    console.log("you are kid")
+}
+else if(age > 18){
+    console.log("you are smart kid")
+}
+else{
+    console.log("smart work")
+}
+console.log("End Ladder")
+
+//use for
+var arr = [1, 2, 3, 4, 5, 6, 7];
+console.log(arr);
+for (
+    var i=0;i<arr.length;i++){
+        console.log(arr[i])
+    }
+
+arr.forEach(function(element){
+    console.log(element);
+})
+
+}
+
+
+
+ 
+
+
+
+    
+    
+   </script> 
+</body>
+</html>
