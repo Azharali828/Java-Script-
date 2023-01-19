@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+        }
+        .bg-primary{ background-color: blueviolet;
+
+        }
+        .text-success{ color: white
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Methods</h1>
+    <div id="firstcontainer" class="container">
+        <button id="click">click me</button>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ab.
+        </p>
+    </div>
+    <div class="container">
+        <p>
+            This is the Paragraph
+        </p>
+<script>
+   let elem = document.getElementById('click');
+//    console.log(elem);
+   let elemClass = document.getElementsByClassName ("container")
+//    console.log(elem)
+//    elemClass[0].style.background = "yellow"
+   elemClass[0].classList.add("bg-primary")
+//    elemClass[0].ClassList.("text-success")
+tn = document.getElementsByTagName('button')
+console.log (tn)
+sel = document.querySelectorAll('.container')
+console.log(sel)
+
+</script>
+    </div>
+</body>
+</html>

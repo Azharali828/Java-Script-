@@ -16,6 +16,24 @@
    <p id="demo">This is the Paragraph of</p>
    <button type="button"
    onclick="myFunction()">Button</button>
+   <script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML = "Java Script.";
+    } 
+
+    function myFunction(agr1, agr2){
+        console.log("inside myFunction::",agr1, arg2);
+        return arg1 * agrg2;
+    }
+const result = myFunction(4, 7);
+console.log("the result is::",resutl);
+document.getElementById("demo").innerHTML= myFunction(4, 7)
+
+function toCelcius(f) {
+    return (5/9) * (f - 32);
+    document.getElementById("demo").innerHTML= toCelcius(100);
+}
+</script>
 
    
 </body>
