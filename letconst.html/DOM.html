@@ -27,7 +27,7 @@
 </head>
 <body>
     <h1>DOM Methods</h1>
-    <div id="firstcontainer" class="container">
+    <div id="firstContainer" class="container">
         <button id="click">click me</button>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ab.
@@ -50,6 +50,16 @@ console.log (tn)
 sel = document.querySelectorAll('.container')
 console.log(sel)
 
+function clicked(){
+    console.log('The document was loaded')
+}
+window.onload = function (){
+    console.log('The document was loaded')
+}
+
+firstContainer.addEventListner('click', function(){
+    console.log('clicked on')
+})
 </script>
     </div>
 </body>
