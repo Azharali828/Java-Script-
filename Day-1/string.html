@@ -10,8 +10,27 @@
     <h1>String of JS</h1>
     <p id="demo"></p>
     <script>
-        let text = "ABCDFERG"
-        document.getElementById("demo").innerHTML= text.length;
-    </script>
+    //     let text = "ABCDFERG"
+    //     document.getElementById("demo").innerHTML= text.length;
+    const text = "ABCDEF";
+    console.log("length of String is ::", text.length);
+    const extractedText = text.slice(2,4);
+    console.log("extracted Text", extractedText);
+
+
+    let text1 = "Apple, Banana, Watermelon";
+    let part = text1.slice(7,13)
+    console.log("Part:",part)
+    let name = "Azhr, Sayyed";
+    let firstName = name.slice(6, 12)
+    document.getElementById("demo").innerHTML= firstName;
+    const partSubstr=text1.substr(7,18);
+    console.log("Banana extrcted via substr methd::",partSubstr);
+
+
+    let partSubstring= text1.partSubstrings(7,13)
+    let partSubstringNegative = text1.substring(-12,-6);
+    console.log("Extravted Banana from text1 ::", partSubstring);
+    // </script>
 </body>
 </html>
