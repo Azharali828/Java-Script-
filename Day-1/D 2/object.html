@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object of JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // // object literal
+    // var rohit = {'name':"Azhr Ali", 'Age':"33", 'city': "Parbhani"}
+    // console.log(rohit)
+    // document.write(rohit.name)
+    // document.write("<br>"+ rohit.city)
+
+    // rohit.city="Hingoli"
+    // document.write("<br>"+ rohit.city)
+
+    //by object
+    var azhar = new Object();
+    azhar.name = "Azhar Ali";
+    azhar.age = "34";
+    azhar.address = "Parbhani";
+    console.log(azhar)
+    document.write("<h1>"+azhar.name+"</h1>")
+    for (const key in azhar) {
+        document.write("<br>")
+        document.write(key +"  : ") 
+            document.write(azhar[key])
+        }
+    
+</script>
+</html>
