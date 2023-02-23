@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="handleAfterOnClick()">Display Text After 10sec</button>
+    <button onclick="handleEveryOnClick()">Display Text Every 2sec</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function handleAfterOnClick() {
+            setTimeout(() => {
+                console.log("After 10 sec");
+                document.getElementById("demo").innerHTML = "Welcome to Azhar ki Duniya";
+
+            }, 15000);
+        }
+        let timerId;
+        function handleEveryOnClick() {
+            let count = 0;
+            clearInterval(timerId)
+             timerId = setInterval(() => {
+                document.getElementById("demo2").innerHTML = count++;
+            }, 1000);
+            setTimeout(() => {
+                clearInterval(timerId)
+            }, 10000)
+        }
+    </script>
+</body>
+
+</html>
